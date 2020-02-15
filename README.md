@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/nandotess/nandotess-resume-2.svg?branch=master)](https://travis-ci.org/nandotess/nandotess-resume)
-
 # nandotess resume 2
 
 ## Development
