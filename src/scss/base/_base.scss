@@ -1,0 +1,46 @@
+// Base
+
+html, body { margin: 0; }
+html { font-size: 100%; }
+
+body {
+    background-color: $color-bg-light;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    font-size: $font-size-base;
+}
+
+.nt {
+    // Main wrapper
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    // Header
+
+    &-header {
+        background-color: $color-bg-light;
+        box-shadow: none;
+        font-size: 90%;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: box-shadow 200ms ease-in-out;
+        z-index: 1;
+
+        .nt-scrolled & { box-shadow: 0 0 rem-calc(5) 0 rgba(0, 0, 0, 0.5); }
+    }
+
+    // Global elements
+
+    &-h1 {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+    }
+
+    &-strong { font-weight: 600; }
+}

@@ -1,0 +1,20 @@
+# Paths
+paths:
+  root: "."
+
+  # Source folders
+  src: "${paths.root}/src"
+  src_sass: "${paths.src}/scss/main.scss"
+  src_js: "${paths.src}/js/main.js"
+
+  # Dist folders
+  dist: "${paths.root}/assets"
+  dist_css: "${paths.dist}/css"
+  dist_js:
+    folder: "${paths.dist}/js"
+    file: "main.js"
+
+# Compile helpers
+helpers:
+  all_sass: "${paths.src}/scss/**/*.scss"
+  all_js: "${paths.src}/js/**/*.js"

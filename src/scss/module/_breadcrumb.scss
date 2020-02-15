@@ -1,0 +1,14 @@
+// Breadcrumb
+
+.nt-breadcrumb {
+    background-color: $color-bg;
+    color: $color-grey-light;
+    display: none;
+    font-size: 90%;
+    padding: rem-calc(8) rem-calc(12);
+    user-select: none;
+
+    @media (min-width: rem-calc(768)) {
+        display: block;
+    }
+}

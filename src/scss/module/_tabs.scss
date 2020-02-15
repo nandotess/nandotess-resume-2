@@ -1,0 +1,14 @@
+// Tabs
+
+.nt-tabs {
+    display: flex;
+
+    // Tab
+
+    &-tab {
+        background-color: $color-bg;
+        color: $color-white;
+        padding: rem-calc(8) rem-calc(12);
+        user-select: none;
+    }
+}

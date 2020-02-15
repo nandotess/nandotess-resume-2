@@ -1,0 +1,36 @@
+# Browsers that we support
+# https://github.com/browserslist/browserslist#best-practices
+
+last 2 versions
+> 1% in US
+not dead
+
+# FYI, report generated on Jun 1 2018 using console command 'npx browserslist'
+# and_chr 79
+# and_ff 68
+# and_qq 1.2
+# and_uc 12.12
+# android 76
+# baidu 7.12
+# chrome 79
+# chrome 78
+# chrome 49
+# edge 79
+# edge 18
+# firefox 72
+# firefox 71
+# firefox 68
+# ie 11
+# ios_saf 13.3
+# ios_saf 13.2
+# ios_saf 13.0-13.1
+# ios_saf 12.2-12.4
+# kaios 2.5
+# op_mini all
+# op_mob 46
+# opera 64
+# opera 63
+# safari 13
+# safari 12.1
+# samsung 10.1
+# samsung 9.2

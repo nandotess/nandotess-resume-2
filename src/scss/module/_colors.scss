@@ -1,0 +1,20 @@
+// Colors
+
+.nt-color {
+    &-comment { color: $color-comment; }
+    &-symbol { color: $color-symbol; }
+    &-fn { color: $color-fn; }
+    &-equal { color: $color-equal; }
+
+    &-dec,
+    &-obj { color: $color-obj; }
+
+    &-return,
+    &-obj-attr { color: $color-obj-attr; }
+
+    &-string {
+        &, a {
+            color: $color-string;
+        }
+    }
+}

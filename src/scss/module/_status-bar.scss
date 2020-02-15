@@ -1,0 +1,22 @@
+// Status bar
+
+.nt-statusbar {
+    background-color: $color-grey-dark;
+    bottom: 0;
+    display: flex;
+    font-size: 80%;
+    justify-content: flex-end;
+    left: 0;
+    position: fixed;
+    right: 0;
+
+    // Status item
+
+    &-item {
+        color: $color-white;
+        padding: rem-calc(4) rem-calc(12);
+        user-select: none;
+
+        .nt-statusbar-item + & { padding-left: 0; }
+    }
+}
