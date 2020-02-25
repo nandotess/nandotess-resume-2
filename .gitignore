@@ -4,6 +4,7 @@ Thumbs.db
 
 # NPM
 node_modules
+package-lock.json
 
 # gulp build
 assets/css/main.css
