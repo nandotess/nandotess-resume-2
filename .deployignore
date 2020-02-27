@@ -1,7 +1,10 @@
 # Folders
 .git
+.git/**
 src
+src/**
 node_modules
+node_modules/**
 
 # Files
 assets/css/.gitkeep
