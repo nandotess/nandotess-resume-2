@@ -1,3 +1,4 @@
+# System
 *.zip
 .DS_Store
 Thumbs.db
@@ -6,7 +7,7 @@ Thumbs.db
 node_modules
 package-lock.json
 
-# gulp build
+# gulp build (allow the CI compiled them)
 assets/css/main.css
 assets/css/main.css.map
 assets/js/main.js

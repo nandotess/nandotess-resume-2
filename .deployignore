@@ -1,0 +1,19 @@
+# Folders
+.git
+src
+node_modules
+
+# Files
+assets/css/.gitkeep
+assets/js/.gitkeep
+.babelrc
+.browserslistrc
+.deployignore
+.editorconfig
+.gitattributes
+.gitignore
+config.yml
+gulpfile.babel.js
+package.json
+package-lock.json
+README.md
