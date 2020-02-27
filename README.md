@@ -1,5 +1,3 @@
-[![Build Status](https://semaphoreci.com/api/v1/nandotess/nandotess-resume-2/branches/master/shields_badge.svg)](https://semaphoreci.com/nandotess/nandotess-resume-2)
-
 # nandotess resume 2
 https://www.fernandotessmann.com/
 
