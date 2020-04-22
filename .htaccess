@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteCond %{HTTP_HOST} ^nandotess.com [NC,OR]
+	RewriteCond %{HTTP_HOST} ^www.nandotess.com [NC,OR]
+
+	RewriteCond %{HTTP_HOST} ^nandotess.com.br [NC,OR]
+	RewriteCond %{HTTP_HOST} ^www.nandotess.com.br [NC,OR]
+
+	RewriteCond %{HTTP_HOST} ^biancatessmann.com [NC,OR]
+	RewriteCond %{HTTP_HOST} ^www.biancatessmann.com [NC,OR]
+
+	RewriteCond %{HTTP_HOST} ^biancatessmann.com.br [NC,OR]
+	RewriteCond %{HTTP_HOST} ^www.biancatessmann.com.br [NC,OR]
+
+	RewriteCond %{HTTP_HOST} ^tessmann.com.br [NC,OR]
+	RewriteCond %{HTTP_HOST} ^www.tessmann.com.br [NC,OR]
+
+	RewriteRule ^(.*)$ http://www.fernandotessmann.com/$1 [L,R=301,NC]
+</IfModule>
