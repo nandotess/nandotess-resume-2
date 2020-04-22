@@ -14,7 +14,7 @@
 	RewriteCond %{HTTP_HOST} ^www.biancatessmann.com.br [NC,OR]
 
 	RewriteCond %{HTTP_HOST} ^tessmann.com.br [NC,OR]
-	RewriteCond %{HTTP_HOST} ^www.tessmann.com.br [NC,OR]
+	RewriteCond %{HTTP_HOST} ^www.tessmann.com.br [NC]
 
 	RewriteRule ^(.*)$ http://www.fernandotessmann.com/$1 [L,R=301,NC]
 </IfModule>
