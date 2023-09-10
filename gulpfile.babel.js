@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const config = require('config-yml');
 const path = require('path');
+const sass = require('gulp-sass')(require('node-sass'));
 
 const $ = gulpLoadPlugins({
     pattern: ['gulp-*', 'cli-*', 'webpack-*']
@@ -37,11 +38,11 @@ const _sass = function() {
     return gulp.src(config.paths.src_sass)
         .pipe($.sourcemaps.init())
         .pipe(
-            $.sass({
+            sass({
                 includePaths: config.paths.npm_sass,
                 outputStyle: 'compact'
             })
-            .on('error', $.sass.logError))
+            .on('error', sass.logError))
         .pipe($.autoprefixer())
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest(config.paths.dist_css))
