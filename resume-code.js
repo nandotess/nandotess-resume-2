@@ -1,121 +1,212 @@
 // Me
 const me = {};
 
-// Name
-[me.firstName, me.lastName, me.location] = ['Fernando', 'Tessmann', 'Toronto, Canada'];
+// Name and Location
+[me.firstName, me.lastName, me.location] = ['Fernando', 'Tessmann', 'Canada'];
 
 // Title
-me.title = `Senior Full Stack Developer | ${['UI', 'ES6', 'Angular', 'WordPress'].join(', ')}`;
-
+me.title = `Software/Product Engineer | Front-End Expert | ${['React', 'Typescript', 'UI', 'UX'].join(', ')}`;
 // About
-fetch('about.txt').then(data => me.about = data);
+
+fetch('about.me').then(response => {
+    return response.text()
+}).then(data => me.about = data);
 
 // Toolbox
-me.toolbox = ['JavaScript', 'ES6', 'Angular', 'WordPress', 'PHP', 'Sass', 'CSS', 'HTML', 'Bootstrap', 'Foundation', 'jQuery', 'SQL', 'MySQL', 'SaaS', 'Gulp', 'LAMP', 'Agile Methodologies', 'Scrum', 'User Experience', 'Responsive Web Design', 'Web Development', 'Front-end Development', 'Full-Stack Development', 'Web Standards', 'SEO', 'Functional Programming', 'DevOps', 'Continuous Integration', 'Continuous Delivery'].sort();
+me.toolbox = ['React', 'GraphQL', 'Typescript', 'JavaScript', 'Next.js', 'JSX', 'HTML', 'Sass', 'CSS'].sort();
 
 // Experience
 me.experience = [
-	{
-		company: 'The Pixel Shop',
-		location: 'Toronto, Canada',
-		roles: [
+    {
+        company: '[stealth]',
+        location: 'Remote',
+        roles: [
             {
-                name: 'Lead Web Developer',
-                period: 'Dec 2017 – Present (1 yr 9 mos)',
-                descripion: `Frontend developer and team leader...`
+                role: 'Co-Founder and Principal Engineer',
+                period: 'Feb 2023 – Present',
+                description: `I'm at the helm of engineering a ground-breaking solution to revolutionize health and nutrition in America. We're on a mission to alleviate the burden of diet-related chronic diseases, aiming to lower healthcare costs for everyone involved, from insurance companies and employers to individuals. Every day is an opportunity to create a significant impact on health and nutrition, and I'm passionate about making a real difference through technology and innovation.`
             }
         ]
-	},
-	{
-		company: 'LightSpeed Development',
-		location: 'Cape Town, South Africa (remote)',
-		roles: [
+    },
+    {
+        company: 'História do Grenal',
+        location: 'Remote',
+        roles: [
             {
-                name: 'Senior Front-end and WordPress Developer',
+                role: 'Co-Founder and Principal Engineer',
+                period: 'Mar 2021 – Present',
+                description: `At História do Grenal, a project I co-founded, we are pioneering a fresh take on local sports rivalries, offering never-seen statistics and innovative data visualizations.`
+            }
+        ]
+    },
+    {
+        company: 'Talentverse',
+        location: 'Remote',
+        roles: [
+            {
+                role: 'Front End Engineer',
+                period: 'Sep 2022 – Sep 2023',
+                description: `At Talentverse (Talentful), I was part of the Founding Engineering Team, a group committed to steering the product's tech vision. My role as a Frontend Engineer finds me elbow-deep in UI, React, Typescript, and GraphQL, creating smooth and efficient user experiences.`
+            }
+        ]
+    },
+    {
+        company: 'Deliverr Inc.',
+        location: 'Remote',
+        roles: [
+            {
+                role: 'Senior Software Engineer',
+                period: 'Jan 2022 – Aug 2022 (8 mos)',
+                description: `At Deliverr Inc., I thrived in my role as a Senior Software Engineer, working diligently within the Delivery Programs Team (Fast Tags). My dedication to timely delivery led to recognition as the "Individual who Delivered the Most Features (Critical, Important, and Urgent) on Time" in 2022. After Deliverr Inc.'s acquisition by Shopify, I decided to pursue new professional paths.`
+            }
+        ]
+    },
+    {
+        company: 'XWP',
+        location: 'Remote',
+        roles: [
+            {
+                role: 'Senior Frontend Engineer',
+                period: 'Jun 2021 – Jan 2022 (8 mos)',
+                description: `As a Senior Frontend Engineer at XWP, I had the opportunity to bring web solutions to life, leveraging my skills in React, Gutenberg, and WordPress. This experience honed my product development skills, keeping me on the cutting edge of the latest web technologies and reinforcing my commitment to delivering high-quality, client-centered solutions. The most relevant project I can mention is Stuff.tv, where I was the engineer responsible for the frontend architecture and development.`
+            }
+        ]
+    },
+    {
+        company: 'The Pixel Shop',
+        location: 'Toronto, Canada',
+        roles: [
+            {
+                role: 'Lead Web Developer',
+                period: 'Dec 2017 – Apr 2021 (3 yrs 5 mos)',
+                description: `At The Pixel Shop, I held the position of Lead Web Developer, where I spearheaded various web projects using Kentico, React, and WordPress, and led a team of 8 talented developers. The most relevant projects I can mention are Alumni at Home (Manulife), Ignite (Food Banks Canada), and Ontario Racing, where I was the engineer responsible for the frontend architecture and development.`
+            }
+        ]
+    },
+    {
+        company: 'LightSpeed Development',
+        location: 'Remote',
+        roles: [
+            {
+                role: 'Senior Front-end and WordPress Developer',
                 period: 'Jun 2016 – Dec 2017 (1 yr 7 mos)',
-                descripion: 'Code WordPress themes and plugins...'
+                description: `As a Senior Front-end and WordPress Developer at LightSpeed Development, I played a key role in crafting WordPress themes and plugins, while also ensuring the smooth functioning of both commercial and open-source products.`
             }
         ]
-	},
-	{
-		company: 'SantoPixel Design & Code',
-		location: 'Porto Alegre, Brazil (remote)',
-		roles: [
+    },
+    {
+        company: 'SantoPixel Design & Code',
+        location: 'Remote',
+        roles: [
             {
-                name: 'Co-founder and Lead Developer',
+                role: 'Co-founder and Lead Developer',
                 period: 'Oct 2012 – Jun 2016 (3 yrs 9 mos)',
-                descripion: 'Code WordPress themes and plugins...'
+                description: `As a Co-founder and Lead Developer at SantoPixel Tecnologia e Inovação, I was deeply involved in creating WordPress themes and plugins, maintaining client products, and assisting in sales initiatives.`
             }
         ]
-	},
-	{
-		company: 'Convertiva Mobile Marketing',
-		location: 'Porto Alegre, Brazil',
-		roles: [
+    },
+    {
+        company: 'Convertiva Mobile Marketing',
+        location: 'Porto Alegre, Brazil',
+        roles: [
             {
-                name: 'IT Manager',
+                role: 'IT Manager',
                 period: 'May 2012 – Jun 2013 (1 yr 2 mos)',
-                descripion: 'Code CodeIgnter sites...'
+                description: `In my role as an IT Manager at Convertiva Mobile Marketing, I primarily maintained and updated client products and offered user support.`
             }
         ]
-	},
-	{
-		company: 'Grupo RBS',
-		location: 'Porto Alegre, Brazil',
-		roles: [
+    },
+    {
+        company: 'Grupo RBS',
+        location: 'Porto Alegre, Brazil',
+        roles: [
             {
-                name: 'Lead Developer',
+                role: 'Lead Developer',
                 period: 'May 2010 – May 2012 (2 yrs 1 mo)',
-                descripion: 'Technical lead, web analyst and front-end developer (JSTL, XSL, JavaScript/jQuery).'
+                description: `As the Lead Developer at Grupo RBS, I wore multiple hats—technical lead, web analyst, and front-end developer.`
             },
             {
-                name: 'Senior Web Developer',
+                role: 'Senior Web Developer',
                 period: 'Mar 2007 – May 2010 (3 yrs 3 mos)',
-                descripion: 'Front-end developer (JSTL, XSL, JavaScript).'
+                description: `As a Senior Web Developer at Grupo RBS, I was a pivotal part in creating high-quality web applications.`
             }
         ]
-	},
-	{
-		name: 'Web Developer',
-		company: 'SulSoftware',
-		period: 'Aug 2006 – Feb 2007 (7 mos)',
-		location: 'Novo Hamburgo, Brazil',
-		descripion: 'UI designer, web standards developer (XHTML, CSS) and ASP programmer.'
-	}
+    },
+    {
+        company: 'runkme',
+        location: 'Porto Alegre, Brazil',
+        roles: [
+            {
+                role: 'Co-Founder and Principal Engineer',
+                period: 'Jul 2010 – Mar 2011 (9 mos)',
+                description: `At runkme, a health start-up I co-founded to aid running coaches, I played a key role as the Principal Engineer.`
+            }
+        ]
+    },
+    {
+        company: 'SulSoftware',
+        location: 'Novo Hamburgo, Brazil',
+        roles: [
+            {
+                role: 'Web Developer',
+                period: 'Aug 2006 – Feb 2007 (7 mos)',
+                description: `In my role as a Web Developer at SulSoftware, I wore many hats—UI designer, UI developer, and ASP programmer—to craft high-quality web solutions.`
+            }
+        ]
+    }
 ];
 
 // Volunteer
 me.volunteer = [
-	{
-		name: 'Pro Bono Developer',
-		company: 'Catchafire',
-		period: 'Jul 2019 – Present',
-		descripion: `I volunteer together with Catchafire...`
-	}
+    {
+        role: 'Pro Bono Developer',
+        company: 'Catchafire',
+        period: 'Jul 2019 – Present',
+        description: `Assist nonprofits with mission critical projects to advance their mission and goals. Contributed approximately $ 20,579 through 2 engagements with nonprofit organizations. Learn more about my impact: catchafire.org/profiles/445269/.`
+    }
 ];
 
 // Education
 me.education = [
-	{
-		school: 'Colégio Marista Pio XII',
-		course: 'College Diploma, Administration and Computer Science',
-		period: '1999 – 2002'
-	}
+    {
+        school: 'Colégio Marista Pio XII (Brazil)',
+        course: 'College Diploma, Administration and Computer Science',
+        period: '1999 – 2002'
+    }
 ];
 
 // Courses
 me.courses = [
-    'ES6, Certificate, Wes Bos (Online)',
-    'JavaScript30, Online Tutorials, Wes Bos (Online)',
-    'Agile Methodologies, Certificate, PUCRS (Brazil)',
-    'Flash Developer, Certificate, Informatize (Brazil)',
-    'SEO, Certificate, ??? (Brazil)',
-    'Web Master, Certificate, Informatize (Brazil)',
-    'Web Designer, Certificate, Informatize (Brazil)'
+    '2022, TypeScript Fundamentals, Certificate, Frontend Masters (Online)',
+    '2021, React: Testing and Debugging, Certificate, Emmanuel Henri (LinkedIn Learning)',
+    '2021, React Hooks, Certificate, Eve Porcello (LinkedIn Learning)',
+    '2021, Advanced React and GraphQL, Certificate, Wes Bos (Online)',
+    '2021, React For Beginners, Certificate, Wes Bos (Online)',
+    '2019, ES6 for Everyone, Certificate, Wes Bos (Online)',
+    '2019, What The Flexbox?!, Free Video Series, Wes Bos (Online)',
+    '2019, JavaScript30, Free Video Series, Wes Bos (Online)',
+    '2012, Personal development and Leadership, Certificate, INEXH (Brazil)',
+    '2011, Agile Methodologies, Certificate, PUCRS (Brazil)',
+    '2010, SEO, Certificate, Mestre SEO (Brazil)',
+    '2005, Flash Developer, Certificate, Informatize (Brazil)',
+    '2004, Web Master, Certificate, Informatize (Brazil)',
+    '2003, Web Designer, Certificate, Informatize (Brazil)'
 ].map(course => {
     [area, type, school] = course.split(', ');
     return { area: area, type: type, school: school };
 });
 
 // Languages
-me.languages = ['English', 'Portuguese'];
+me.languages = ['English (Full Professional)', 'Portuguese (Native)', 'Spanish (Limited Working)'];
+
+// Contact
+[me.email, me.linkedIn, me.github] = ['nandotess85@gmail.com', 'linkedin.com/in/nandotess', 'github.com/nandotess'];
+
+// Log
+console.clear();
+console.log(me);
+
+// TODO
+// Open Graph and Twitter Card
+// Accessibility Check
+// Print Version
