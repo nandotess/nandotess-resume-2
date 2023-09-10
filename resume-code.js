@@ -5,7 +5,7 @@ const me = {};
 [me.firstName, me.lastName, me.location] = ['Fernando', 'Tessmann', 'Canada'];
 
 // Title
-me.title = `Software/Product Engineer | Front-End Expert | ${['React', 'Typescript', 'UI', 'UX'].join(', ')}`;
+me.title = `Co-Founder at Stealth Startup | Product Engineer | Software Engineer | Front-End Expert | ${['React', 'Typescript', 'UI', 'UX'].join(', ')}`;
 // About
 
 fetch('about.me').then(response => {
